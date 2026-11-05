@@ -58,7 +58,7 @@ def classify_image_with_groq(image_bytes):
         return f"API Error: {e}"
 
 # UI Layout
-st.title("🌿 Plant Doctor AI")
+st.title("🌿 Agri Scout")
 st.write("Take a picture of a plant leaf using your phone camera to diagnose its health instantly.")
 
 # Phone Camera Input widget (automatically opens phone camera hardware on mobile browsers)
