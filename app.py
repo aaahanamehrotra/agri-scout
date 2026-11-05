@@ -12,6 +12,23 @@ load_dotenv()
 # Page configuration for mobile browsers
 st.set_page_config(page_title="Plant Leaf Health Classifier", page_icon="🌿", layout="centered")
 
+st.markdown("""
+    <style>
+    /* Force camera input container and video elements to take full width */
+    [data-testid="stCameraInput"] {
+        width: 100% !important;
+    }
+    [data-testid="stCameraInput"] section {
+        width: 100% !important;
+    }
+    [data-testid="stCameraInput"] video {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 @st.cache_resource
 def get_groq_client():
     return Groq()
